@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.duitku.sdk.ListPaymentMethodDuitku">
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:visibility="gone"
+        android:id="@+id/custom_loading_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_duitku_spinner"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:text="Memuat"
+            android:layout_below="@id/iv_duitku_spinner"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:visibility="gone"
+        android:id="@+id/custom_loading_error_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_duitku_error"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/txt_error"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="error"
+            android:layout_below="@id/iv_duitku_error"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_pay"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#fff"
+            app:elevation="4dp"
+            android:theme="@style/mytoolbar"
+            app:popupTheme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+
+            <TextView
+                android:layout_marginRight="25dp"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Payment"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:id="@+id/toolbar_title" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bar_amount"
+        android:background="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:text="Jumlah Pembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 10.000"
+                    android:layout_marginLeft="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPayment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/demo"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/demo"
+        android:layout_width="140dp"
+        android:layout_height="190dp" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

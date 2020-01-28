@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+
+    android:id="@+id/view_toolbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:visibility="gone"
+            android:id="@+id/toolbar_dashboard"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#fff"
+            app:elevation="4dp"
+            android:theme="@style/mytoolbar"
+            app:popupTheme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+
+            <TextView
+
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title payment"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="right"
+                android:id="@+id/toolbar_title" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>
+
+
+
+
+    <WebView
+        android:layout_below="@id/view_toolbar"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:visibility="gone"
+        android:id="@+id/custom_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_duitku_spinner"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:text="Memuat"
+            android:layout_below="@id/iv_duitku_spinner"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:visibility="gone"
+        android:id="@+id/custom_loading_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_duitku_error"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/txt_error"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Memuat"
+            android:layout_below="@id/iv_duitku_error"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/view_toolbar_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+            <androidx.appcompat.widget.Toolbar
+                android:visibility="gone"
+                android:id="@+id/toolbar_dashboard_top"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="#fff"
+                app:elevation="4dp"
+                android:theme="@style/mytoolbar"
+                app:popupTheme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+
+                <TextView
+
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title payment"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:layout_marginRight="25dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/toolbar_title_top" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+

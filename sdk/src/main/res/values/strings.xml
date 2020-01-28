@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">libraryku</string>
+
+    <string name="ovoDashboard">TopUpOVO</string>
+    <string name="ovoNotifikasi">TopUpDuitkuNotification</string>
+    <string name="ccNotifikasi">TopUpDuitkuCreditCardNotification</string>
+    <string name="dashboardCC">TopUpDuitkuCC</string>
+    <string name="sandbox">sandbox</string>
+    <string name="passport">passport</string>
+    <string name="expiredpage">ExpiredPage</string>
+    <string name="retryExpiredpage">Session Expired, Please, Retry Your Payment</string>
+
+</resources>

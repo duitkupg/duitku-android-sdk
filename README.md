@@ -22,7 +22,7 @@
 
 ```html
 	Development Tool       		 : Android Studio 3.4 > 
-	Gradle Version         		 : 3.4.1 > </label>
+	Gradle Version         		 : 3.4.1 > 
 	Target SDK Version     		 : API Level 29 
 	Minimum SDK Version   		 : API Level 21 (Lollipop) 
 ```

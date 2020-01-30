@@ -21,7 +21,21 @@ Minimum SDK Version       :</label><br/>
 How to try example
 Visit and try the app module to see an example of how the SDK works.
 
-Installation
+
+
+<h3>Installation</h3>
+
+<h4>Maven</h4>
+
+  <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+
+
 <br>
 compile 'com.duitku:sdk-android:1.0'
 

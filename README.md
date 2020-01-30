@@ -1,7 +1,7 @@
 <h1>duitku-sdk-android</h1>
-The Xendit Android SDK makes it easy to collect sensitive credit card information without that data ever having to touch your server.
+Welcome to, Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android aplication.
 
-Ownership
+<h3>Ownership</h3>
 Team: TPI
 
 Slack Channel: #integration-product

@@ -42,6 +42,10 @@ Gradle:
 compile 'com.duitku:sdk-android:1.0'
 
 
+<h3>Full step InstallationPDF</h3>
+
+Ask
+
 Ivy:
 
 <dependency org='com.xendit' name='xendit-android' rev='1.1.0'>

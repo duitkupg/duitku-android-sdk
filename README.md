@@ -21,13 +21,6 @@ Minimum SDK Version       :</label><br/>
 How to try example
 Visit and try the app module to see an example of how the SDK works.
 
-Install android studio.
-Clone repository.
-Get your own API Key.
-Change line with your own API Key.
-PUBLISHABLE_KEY="xnd_public_development_YOURAPIKEY"
-*Replace YOURAPIKEY with your own API Key.
-
 Installation
 Maven:
 
@@ -40,9 +33,6 @@ Maven:
 Gradle:
 
 compile 'com.duitku:sdk-android:1.0'
-
-
-
 
 
 <dependency org='com.xendit' name='xendit-android' rev='1.1.0'>

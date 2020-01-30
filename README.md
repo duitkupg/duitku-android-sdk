@@ -53,5 +53,5 @@ For more information, visit https://bintray.com/xendit/android/xendit-sdk-androi
 
 
 <h3>Full step Installation </h3>
-<a> https://bintray.com/xendit/android/xendit-sdk-android</a>
+https://bintray.com/xendit/android/xendit-sdk-android
 

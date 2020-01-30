@@ -26,15 +26,17 @@ Visit and try the app module to see an example of how the SDK works.
 <h3>Installation</h3>
 
 <h4>Maven</h4>
+<pre>
 
+<code>
   <repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
 		</repository>
 	</repositories>
-
-
+</code>
+</pre>
 
 <br>
 compile 'com.duitku:sdk-android:1.0'

@@ -29,10 +29,10 @@ compile 'com.duitku:sdk-android:1.0'
 <dependency org='com.xendit' name='xendit-android' rev='1.1.0'>
   <artifact name='xendit-android' ext='pom' ></artifact>
 </dependency>
-For more information, visit https://bintray.com/xendit/android/xendit-sdk-android
+link ..
 
 
 
 <h3>Full step Installation </h3>
-https://bintray.com/xendit/android/xendit-sdk-android
+link ..
 

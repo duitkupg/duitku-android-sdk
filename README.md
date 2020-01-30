@@ -2,7 +2,7 @@
 <b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android aplication.
 
 <h2>Installations</h2>
-<hr>
+
 <h3>Server Merchant</h3>
 
 <label>Merchant Server Base URL  :</label><br/>
@@ -11,10 +11,10 @@
 
 <h3>Recommended specifications for your application development</h3>
 
-Development Tool          :
-Gradle Version            :
-Target SDK Version        :
-Minimum SDK Version       :
+Development Tool          :</label><br/>
+Gradle Version            :</label><br/>
+Target SDK Version        :</label><br/>
+Minimum SDK Version       :</label><br/>
 
 
 
@@ -32,14 +32,16 @@ Installation
 Maven:
 
 <dependency>
-  <groupId>com.xendit</groupId>
-  <artifactId>xendit-android</artifactId>
-  <version>2.2.0</version>
+  <groupId>com.duitku</groupId>
+  <artifactId>duitku-android</artifactId>
+  <version>1.0</version>
   <type>pom</type>
 </dependency>
 Gradle:
 
-compile 'com.xendit:xendit-android:2.2.0'
+compile 'com.duitku:sdk-android:1.0'
+
+
 Ivy:
 
 <dependency org='com.xendit' name='xendit-android' rev='1.1.0'>

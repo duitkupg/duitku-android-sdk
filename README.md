@@ -42,14 +42,16 @@ Gradle:
 compile 'com.duitku:sdk-android:1.0'
 
 
-<h3>Full step InstallationPDF</h3>
 
-Ask
 
-Ivy:
 
 <dependency org='com.xendit' name='xendit-android' rev='1.1.0'>
   <artifact name='xendit-android' ext='pom' ></artifact>
 </dependency>
 For more information, visit https://bintray.com/xendit/android/xendit-sdk-android
+
+
+
+<h3>Full step Installation </h3>
+<a>PDF</a>
 

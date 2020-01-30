@@ -1,4 +1,4 @@
-xendit-sdk-android
+<h1>duitku-sdk-android</h1>
 The Xendit Android SDK makes it easy to collect sensitive credit card information without that data ever having to touch your server.
 
 Ownership

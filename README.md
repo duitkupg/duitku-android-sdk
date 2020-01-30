@@ -29,12 +29,12 @@ Visit and try the app module to see an example of how the SDK works.
 <pre>
 
 <code>
-  <repositories>
+ "<repositories> 
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
 		</repository>
-	</repositories>
+	</repositories> "
 </code>
 </pre>
 

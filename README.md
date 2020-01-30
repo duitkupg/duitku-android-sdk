@@ -5,18 +5,23 @@
 
 <h3>Server Merchant</h3>
 
-<label>Merchant Server Base URL  :</label><br/>
-<label>Transaction Request       :</label><br/>
-<label>Transaction Check         :</label><br/>
+
+```html
+	Merchant Server Base URL  :
+	Transaction Request       :
+	Transaction Check         :
+```
+
+
 
 <h3>Recommended specifications for your application development</h3>
 
 
 ```html
-	Development Tool       		 : Android Studio 3.4 > </label><br/>
-	Gradle Version         		 : 3.4.1 > </label><br/>
-	Target SDK Version     		 : API Level 29 </label><br/>
-	Minimum SDK Version   		 : API Level 21 (Lollipop) </label><br/>
+	Development Tool       		 : Android Studio 3.4 > 
+	Gradle Version         		 : 3.4.1 > </label>
+	Target SDK Version     		 : API Level 29 
+	Minimum SDK Version   		 : API Level 21 (Lollipop) 
 ```
 
 

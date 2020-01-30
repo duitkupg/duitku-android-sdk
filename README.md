@@ -1,13 +1,13 @@
 <h1>duitku-sdk-android</h1>
-Welcome to, Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android aplication.
+<b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android aplication.
 
 <h2>Installations</h2>
 <hr>
 <h3>Server Merchant</h3>
 
-Merchant Server Base URL  :
-Transaction Request       :
-Transaction Check         :
+<label>Merchant Server Base URL  :</label>
+<label>Transaction Request       :</label>
+<label>Transaction Check         :</label>
 
 <h3>Recommended specifications for your application development</h3>
 

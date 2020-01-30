@@ -22,16 +22,7 @@ How to try example
 Visit and try the app module to see an example of how the SDK works.
 
 Installation
-Maven:
-
-<dependency>
-  <groupId>com.duitku</groupId>
-  <artifactId>duitku-android</artifactId>
-  <version>1.0</version>
-  <type>pom</type>
-</dependency>
-Gradle:
-
+<br>
 compile 'com.duitku:sdk-android:1.0'
 
 

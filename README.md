@@ -63,6 +63,17 @@ Visit and try the app module to see an example of how the SDK works.
 	implementation 'com.duitku:sdk-android:1.0'
 ```
 
+<h4>Build.gradle</h4>
+
+```html
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
 
 link ..
 

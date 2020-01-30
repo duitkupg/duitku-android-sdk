@@ -5,9 +5,9 @@
 <hr>
 <h3>Server Merchant</h3>
 
-<label>Merchant Server Base URL  :</label>
-<label>Transaction Request       :</label>
-<label>Transaction Check         :</label>
+<label>Merchant Server Base URL  :</label><br/>
+<label>Transaction Request       :</label><br/>
+<label>Transaction Check         :</label><br/>
 
 <h3>Recommended specifications for your application development</h3>
 

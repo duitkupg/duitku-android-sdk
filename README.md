@@ -36,8 +36,18 @@ Visit and try the app module to see an example of how the SDK works.
 	</repositories>
 ```
 
-compile 'com.duitku:sdk-android:1.0'
+```html
+	<dependency>
+	    <groupId>com.github.duitkupg</groupId>
+	    <artifactId>DuitkuSDK</artifactId>
+	    <version>1.0</version>
+	</dependency>
+```
 
+<h4>Build.gradle(Module:app)</h4>
+```html
+implementation 'com.duitku:sdk-android:1.0'
+```
 
 
 link ..

@@ -80,8 +80,6 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 ```
 
 
-link ..
-
 
 
 <h3>Full step Installation </h3>

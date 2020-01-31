@@ -11,7 +11,7 @@
 
 ```html
 	Merchant Server Base URL  : example https://merchant.com/api/
-	Transaction Request       : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php
+	Transaction Request       : <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" > Request </a>
 	Transaction Check         : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php
 	List Payment       	  : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php
 ```

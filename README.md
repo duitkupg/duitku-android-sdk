@@ -16,6 +16,7 @@
 	List Payment       	  : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php
 ```
 
+<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">request</a>
 
 
 <h3>Recommended specifications for your application development</h3>

@@ -10,13 +10,9 @@
 
 
 ```html
-	Merchant Server Base URL  : example https://merchant.com/api/
-	Transaction Request       : <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" > Request </a>
-	Transaction Check         : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php
-	List Payment       	  : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php
+	Transaction Request      
 ```
-
-<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">request</a>
+<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">Request.php</a>
 
 
 <h3>Recommended specifications for your application development</h3>

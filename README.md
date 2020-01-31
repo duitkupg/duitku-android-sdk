@@ -10,11 +10,12 @@
 
 
 ```html
-	Request Transaction   
-	Check Transaction
-	List Payment
+	Base Url 		: https://merchant.com/api/
+	Request Transaction 	: https://merchant.com/api/requestTransaction.php
+	Check Transaction	: https://merchant.com/api/checkTransaction.php
+	List Payment		: https://merchant.com/api/listPayment.php
 ```
-Download <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">requestTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php" download="checkTransaction.php">checkTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php" download="listPayment.php">listPayment.php</a>
+Download sample file <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">requestTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php" download="checkTransaction.php">checkTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php" download="listPayment.php">listPayment.php</a>
 
 
 <h3>Recommended specifications for your application development</h3>

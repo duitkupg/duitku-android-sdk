@@ -10,9 +10,11 @@
 
 
 ```html
-	Transaction Request      
+	Request Transaction   
+	Check Transaction
+	List Payment
 ```
-<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">Request.php</a>
+Download <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">requestTransaction.php</a><a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php" download="checkTransaction.php">checkTransaction.php</a><a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php" download="listPayment.php">listPayment.php</a>
 
 
 <h3>Recommended specifications for your application development</h3>

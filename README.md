@@ -44,19 +44,18 @@ Visit and try the app module to see an example of how the SDK works.
 <h4>Maven</h4>
 
 ```html
-	<repositories> 
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+	<dependency>
+		<groupId>com.duitku.sdk</groupId>
+		<artifactId>com.duitku.sdk</artifactId>
+		<version>1.0</version>
+		<type>pom</type>
+	</dependency>
 ```
+<h4>ivy</h4>
 
 ```html
-	<dependency>
-	    <groupId>com.github.duitkupg</groupId>
-	    <artifactId>DuitkuSDK</artifactId>
-	    <version>1.0</version>
+	<dependency org="com.duitku.sdk" name="com.duitku.sdk" rev="1.0">
+		<artifact name="com.duitku.sdk" ext="pom"></artifact>
 	</dependency>
 ```
 
@@ -65,7 +64,7 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 <h4>Build.gradle(Module:app)</h4>
 
 ```html
-	implementation 'com.duitku:sdk-android:1.0'
+	implementation 'com.duitku.sdk:com.duitku.sdk:1.0'
 ```
 
 <h4>Build.gradle</h4>

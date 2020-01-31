@@ -67,19 +67,6 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 	implementation 'com.duitku.sdk:com.duitku.sdk:1.0'
 ```
 
-<h4>Build.gradle</h4>
-
-```html
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-```
-
-
-
 
 <h3>Full step Installation </h3>
 Download  <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Docs/requestTransaction.php" download="requestTransaction.php">Duitku-Android-sdk-docs.pdf</a>

@@ -10,9 +10,10 @@
 
 
 ```html
-	Merchant Server Base URL  :
-	Transaction Request       :
-	Transaction Check         :
+	Merchant Server Base URL  : example https://merchant.com/api/
+	Transaction Request       : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php
+	Transaction Check         : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php
+	List Payment       	  : https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php
 ```
 
 

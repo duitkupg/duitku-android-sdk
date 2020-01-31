@@ -10,6 +10,8 @@
 
 
 ```html
+	Example,
+
 	Base Url 		: https://merchant.com/api/
 	Request Transaction 	: https://merchant.com/api/requestTransaction.php
 	Check Transaction	: https://merchant.com/api/checkTransaction.php

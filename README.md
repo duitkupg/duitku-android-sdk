@@ -81,5 +81,5 @@ link ..
 
 
 <h3>Full step Installation </h3>
-link ..
+Download  <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Docs/requestTransaction.php" download="requestTransaction.php">Duitku-Android-sdk-docs.pdf</a>
 

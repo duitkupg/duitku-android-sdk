@@ -58,6 +58,8 @@ Visit and try the app module to see an example of how the SDK works.
 	</dependency>
 ```
 
+For more information, visit https://bintray.com/duitku/android/duitku-sdk-android
+
 <h4>Build.gradle(Module:app)</h4>
 
 ```html

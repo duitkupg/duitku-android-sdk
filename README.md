@@ -4,6 +4,9 @@
 <b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android application.
 
 
+![Alt text](https://github.com/duitkupg/duitku-android-sdk/blob/master/img/transactionflow.png "Optional title")
+
+
 <h2>Installations</h2>
 
 <h3>Server Merchant</h3>

@@ -69,7 +69,7 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 <h4>Build.gradle(Module:app)</h4>
 
 ```html
-	implementation 'com.duitku.sdk:com.duitku.sdk:1.0'
+	implementation 'com.duitku.android:sdk:1.0'
 ```
 
 

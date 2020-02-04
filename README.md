@@ -4,7 +4,7 @@
 <b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android application.
 
 <div align="center">
-    <img style="align:center;" src="https://github.com/duitkupg/duitku-android-sdk/blob/master/img/transactionflow.png" width="700px"</img> 
+    <img style="align:center;" src="https://github.com/duitkupg/duitku-android-sdk/blob/master/img/transactionflow.png" width="550px"</img> 
 </div>
 
 

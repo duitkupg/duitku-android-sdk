@@ -39,8 +39,6 @@ Download sample file <a href="https://github.com/duitkupg/duitku-android-sdk/blo
 
 
 
-How to try example
-Visit and try the app module to see an example of how the SDK works.
 
 
 

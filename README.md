@@ -48,17 +48,17 @@ Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/b
 
 ```html
 	<dependency>
-		<groupId>com.duitku.sdk</groupId>
-		<artifactId>com.duitku.sdk</artifactId>
-		<version>1.0</version>
-		<type>pom</type>
+	  <groupId>com.duitku</groupId>
+	  <artifactId>duitku-android-sdk</artifactId>
+	  <version>1.0</version>
+	  <type>pom</type>
 	</dependency>
 ```
 <h4>ivy</h4>
 
 ```html
-	<dependency org="com.duitku.sdk" name="com.duitku.sdk" rev="1.0">
-		<artifact name="com.duitku.sdk" ext="pom"></artifact>
+	<dependency org='com.duitku' name='duitku-android-sdk' rev='1.0'>
+	  <artifact name='duitku-android-sdk' ext='pom' ></artifact>
 	</dependency>
 ```
 
@@ -67,7 +67,7 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 <h4>Build.gradle(Module:app)</h4>
 
 ```html
-	implementation 'com.duitku.android:sdk:1.0'
+	implementation 'com.duitku:duitku-android-sdk:1.0'
 ```
 
 

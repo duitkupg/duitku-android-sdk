@@ -72,13 +72,12 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 
 <h3>Sample Project</h3>
 
-```html
-	implementation 'com.duitku:duitku-android-sdk:1.0'
-```
+
 
 ```html
 	git clone https://github.com/duitkupg/sample-project.git
 ```
+
 or Go To <a target="_Blank" href=" https://github.com/duitkupg/sample-project.git">sample project</a>
 
 <h3>Full step Installation </h3>

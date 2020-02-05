@@ -1,4 +1,4 @@
-<h1>duitku-sdk-android</h1>
+<h1>duitku-sdk-android 1.0</h1>
 
 
 <b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android application.

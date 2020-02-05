@@ -74,7 +74,7 @@ For more information, visit https://bintray.com/duitku/android/duitku-sdk-androi
 ```html
 	git clone https://github.com/duitkupg/sample-project.git
 ```
-or go to <a target="_Blank" href=" https://github.com/duitkupg/sample-project.git">sample project</a>
+or Go To <a target="_Blank" href=" https://github.com/duitkupg/sample-project.git">sample project</a>
 
 <h3>Full step Installation </h3>
 Download  <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Docs/requestTransaction.php" download="requestTransaction.php">Duitku-Android-sdk-docs.pdf</a>

@@ -1,4 +1,4 @@
-<h1>duitku-sdk-android</h1>
+<h1>duitku-android-sdk 1.0</h1>
 
 
 <b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android application.
@@ -22,7 +22,7 @@
 	Check Transaction	: https://merchant.com/api/checkTransaction.php
 	List Payment		: https://merchant.com/api/listPayment.php
 ```
-Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">requestTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php" download="checkTransaction.php">checkTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listPayment.php" download="listPayment.php">listPayment.php</a>
+Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/requestTransaction.php" download="requestTransaction.php">requestTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/checkTransaction.php" download="checkTransaction.php">checkTransaction.php</a>&nbsp;&nbsp;<a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Webserver/listpayment.php" download="listpayment.php">listPayment.php</a>
 
 
 <h3>Recommended specifications for your application development</h3>
@@ -48,29 +48,39 @@ Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/b
 
 ```html
 	<dependency>
-		<groupId>com.duitku.sdk</groupId>
-		<artifactId>com.duitku.sdk</artifactId>
-		<version>1.0</version>
-		<type>pom</type>
+	  <groupId>com.duitku</groupId>
+	  <artifactId>duitku-android-sdk</artifactId>
+	  <version>1.0</version>
+	  <type>pom</type>
 	</dependency>
 ```
 <h4>ivy</h4>
 
 ```html
-	<dependency org="com.duitku.sdk" name="com.duitku.sdk" rev="1.0">
-		<artifact name="com.duitku.sdk" ext="pom"></artifact>
+	<dependency org='com.duitku' name='duitku-android-sdk' rev='1.0'>
+	  <artifact name='duitku-android-sdk' ext='pom' ></artifact>
 	</dependency>
 ```
 
-For more information, visit https://bintray.com/duitku/android/duitku-sdk-android
+For more information, visit https://bintray.com/duitku/duitku-android-sdk/duitku-android-sdk
 
 <h4>Build.gradle(Module:app)</h4>
 
 ```html
-	implementation 'com.duitku.android:sdk:1.0'
+	implementation 'com.duitku:duitku-android-sdk:1.0'
 ```
 
+<h3>Sample Project</h3>
 
-<h3>Full step Installation </h3>
-Download  <a href="https://github.com/duitkupg/duitku-android-sdk/blob/master/Docs/requestTransaction.php" download="requestTransaction.php">Duitku-Android-sdk-docs.pdf</a>
+
+
+```html
+	git clone https://github.com/duitkupg/sample-project.git
+```
+
+Visit <a target="_Blank" href="https://github.com/duitkupg/sample-project" >Github Sample Project</a>
+
+
+<h3>Full Step Docs </h3>
+Download  <a target="_blank" href="https://docs.duitku.com/">https://docs.duitku.com/</a>
 

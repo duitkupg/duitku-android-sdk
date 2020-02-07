@@ -57,7 +57,7 @@ Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/b
 <h4>ivy</h4>
 
 ```html
-	<dependency org='com.duitku' name='duitku-android-sdk' rev='1.0'>
+	<dependency org='com.duitku' name='duitku-android-sdk' rev='1.0.0'>
 	  <artifact name='duitku-android-sdk' ext='pom' ></artifact>
 	</dependency>
 ```

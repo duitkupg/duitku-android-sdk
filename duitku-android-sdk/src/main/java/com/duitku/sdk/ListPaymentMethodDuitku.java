@@ -43,7 +43,6 @@ import retrofit2.Response;
 public class ListPaymentMethodDuitku extends AppCompatActivity  {
 
     private com.duitku.sdk.DuitkuUtility.DuitkuKit DuitkuKit;
-    private ImageView demo_ls;
     private TextView txt_amount;
     private Toolbar toolbar ;
     private DuitkuCallbackTransaction callbackKit ;
@@ -88,8 +87,7 @@ public class ListPaymentMethodDuitku extends AppCompatActivity  {
         Glide.with(this).load(R.mipmap.i_error).into(iv_error);
 
         callbackKit = new DuitkuCallbackTransaction();
-        demo_ls = findViewById(R.id.demo);
-        demo_ls.setAlpha(100);
+
         prefManager = new LocalPrefManagerDuitku(getApplicationContext());
 
         txt_amount = findViewById(R.id.txt_amount);

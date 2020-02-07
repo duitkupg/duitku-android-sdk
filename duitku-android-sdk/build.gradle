@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
 
 group 'com.duitku'
-version '1.0'
+version '1.0.0'
 
 android {
     compileSdkVersion 29
@@ -12,10 +12,10 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -39,8 +39,8 @@ android {
 
 ext {
     butterknifeVersion = "8.8.1"
-
-        bintrayRepo = 'android'
+        bintrayOrg = 'duitku'
+        bintrayRepo = 'duitku-android-sdk'
         bintrayName = 'duitku-android-sdk'   // Has to be same as your library module name
 
         publishedGroupId = 'com.duitku'
@@ -54,7 +54,7 @@ ext {
         gitUrl =  'https://github.com/duitkupg/duitku-android-sdk.git'
         githubRepository= 'duitkupg/duitku-android-sdk'
 
-        libraryVersion = '1.0'
+        libraryVersion = '1.0.0'
 
         developerId = 'duitku'
         developerName = 'Bambang Maulana'
@@ -64,6 +64,12 @@ ext {
         licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
         allLicenses = ["Apache-2.0"]
 
+}
+
+bintray {
+    pkg {
+        userOrg = 'duitku'
+    }
 }
 
 dependencies {

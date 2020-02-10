@@ -82,5 +82,5 @@ Visit <a target="_Blank" href="https://github.com/duitkupg/sample-project" >Gith
 
 
 <h3>Full Step Docs </h3>
-Download  <a target="_blank" href="https://docs.duitku.com/mobile/android/en/#introduction">Duitku Mobile Docs</a>
+Download  <a target="_blank" href="https://docs.duitku.com/mobile/android/en/#introduction">Duitku Docs</a>
 

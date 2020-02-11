@@ -151,7 +151,7 @@ public class DuitkuTransaction extends AppCompatActivity {
                 if (response.isSuccessful()){
                     ResponseTransaction responseData = response.body();
 
-                    if(responseData.getStatusMessage().equals(DuitkuTransaction.this.getString(R.string.errorConnection))){
+                    if(responseData.getStatusMessage().equals(DuitkuTransaction.this.getString(R.string.sukses))){
                         closeProgreesLoading();
                         String d_url = response.body().getPaymentUrl();
                         reference = response.body().getReference();

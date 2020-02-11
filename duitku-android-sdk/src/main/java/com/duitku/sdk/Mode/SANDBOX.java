@@ -68,7 +68,7 @@ public class SANDBOX {
                 ((DuitkuTransaction)(context)).displayError(context.getString(R.string.retryExpiredpage));
 
                 }else if(url.contains("TopUpOVO")) {
-                
+
                 }else if(url.contains(duitkuKit.getReturnUrl()) || url.equals("") || url == ""   ) {
                     //wait(500);
                     ((DuitkuTransaction)(context)).closeProgreesLoading();

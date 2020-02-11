@@ -125,7 +125,7 @@ public class ListPaymentMethodDuitku extends AppCompatActivity  {
         getListCheckout(amount) ;
 
         d_finish d_finish =new d_finish(this);
-        d_finish.duitkuFinish();
+        d_finish.duitkuFinish(ListPaymentMethodDuitku.this);
 
 
 
@@ -157,7 +157,7 @@ public class ListPaymentMethodDuitku extends AppCompatActivity  {
     public void onResume(){
 
         d_finish d_finish =new d_finish(this);
-        d_finish.duitkuFinish();
+        d_finish.duitkuFinish(ListPaymentMethodDuitku.this);
 
         //finishcallbackfrommerchant
         if(!callbackKit.isCallbackFromMerchant()){

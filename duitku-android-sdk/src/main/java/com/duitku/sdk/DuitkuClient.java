@@ -44,16 +44,16 @@ public class DuitkuClient extends AppCompatActivity {
         //num = 0 ;
     }
 
-    public void run() {
+    public void run(Context context) {
 
 
-        if (code.equals(DuitkuClient.this.getString(R.string.zero))) {
+        if (code.equals(context.getString(R.string.zero))) {
             onSuccessTransaction(status, reference, amount, code);
-        } else if (code.equals(DuitkuClient.this.getString(R.string.one))) {
+        } else if (code.equals(context.getString(R.string.one))) {
             onPendingTransaction(status, reference, amount, code);
-        } else if (code.equals(DuitkuClient.this.getString(R.string.two))) {
+        } else if (code.equals(context.getString(R.string.two))) {
             onCancelTransaction(status, reference, amount, code);
-        } else if (code.equals(DuitkuClient.this.getString(R.string.three))) {
+        } else if (code.equals(context.getString(R.string.three))) {
             onCancelTransaction(status, reference, amount, code);
         }else {
 
@@ -62,16 +62,16 @@ public class DuitkuClient extends AppCompatActivity {
 
     }
 
-    public void duitkuFinish() {
+    public void duitkuFinish(Context context) {
 
 
-        if (code.equals(DuitkuClient.this.getString(R.string.zero))) {
+        if (code.equals(context.getString(R.string.zero))) {
             onDone();
-        } else if (code.equals(DuitkuClient.this.getString(R.string.one))) {
+        } else if (code.equals(context.getString(R.string.one))) {
             onDone();
-        } else if (code.equals(DuitkuClient.this.getString(R.string.two))) {
+        } else if (code.equals(context.getString(R.string.two))) {
             onDone();
-        } else if (code.equals(DuitkuClient.this.getString(R.string.three))) {
+        } else if (code.equals(context.getString(R.string.three))) {
             onDone();
         } else {
 

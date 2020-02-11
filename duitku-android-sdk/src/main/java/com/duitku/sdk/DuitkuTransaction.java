@@ -31,12 +31,15 @@ import com.duitku.sdk.DuitkuUtility.BaseKitDuitku;
 import com.duitku.sdk.DuitkuUtility.DuitkuKit;
 import com.duitku.sdk.Mode.PASSPORT;
 import com.duitku.sdk.Mode.SANDBOX;
+import com.duitku.sdk.Model.Address;
+import com.duitku.sdk.Model.CustomerDetails;
 import com.duitku.sdk.Model.ResponseCheckTransaction;
 import com.duitku.sdk.Network.NetworkService;
 import com.duitku.sdk.Network.ServerNetwork;
 import com.duitku.sdk.Model.ResponseTransaction;
 import com.duitku.sdk.PrefManagerDuitku.LocalPrefManagerDuitku;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -86,6 +89,22 @@ public class DuitkuTransaction extends AppCompatActivity {
 
         ButterKnife.bind(DuitkuTransaction.this);
         API = ServerNetwork.getAPIService();
+
+
+
+
+        Address address = new Address(DuitkuKit.getFirstName(),DuitkuKit.getLastName(),DuitkuKit.getAddress(),DuitkuKit.getCity(),DuitkuKit.getPostalCode(),DuitkuKit.getPhoneNumber(),DuitkuKit.getCountryCode());
+        ArrayList<Address> shippingAddress = new  ArrayList<Address> ();
+        shippingAddress.add(address);
+
+        ArrayList<Address> billingAddress = new  ArrayList<Address> ();
+        billingAddress.add(address);
+
+        CustomerDetails customerDetails = new CustomerDetails(DuitkuKit.getFirstName(),DuitkuKit.getLastName(),DuitkuKit.getEmail(),DuitkuKit.getPhoneNumber(),billingAddress,shippingAddress) ;
+        ArrayList<CustomerDetails> customerDetails_ = new  ArrayList<CustomerDetails> ();
+        customerDetails_.add(customerDetails);
+
+
         checkout(DuitkuKit.getPaymentAmount(),
                 DuitkuKit.getPaymentMethod(),
                 DuitkuKit.getProductDetails(),
@@ -96,7 +115,7 @@ public class DuitkuTransaction extends AppCompatActivity {
                 DuitkuKit.getCustomerVaName(),
                 DuitkuKit.getCallbackUrl(),
                 DuitkuKit.getReturnUrl(),
-                DuitkuKit.getExpiryPeriod());
+                DuitkuKit.getExpiryPeriod(),customerDetails_);
     }
 
     private void initialiasi(){
@@ -132,9 +151,9 @@ public class DuitkuTransaction extends AppCompatActivity {
     }
 
 
-    private void checkout(final int paymentAmount,final String paymentMethod, final String productDetails,final String email,final String phoneNumber, final String additionalParam, final String merchantUserInfo, final String customerVaName,final String callbackUrl, final String returnUrl, final String expiryPeriod) {
+    private void checkout(final int paymentAmount, final String paymentMethod, final String productDetails, final String email, final String phoneNumber, final String additionalParam, final String merchantUserInfo, final String customerVaName, final String callbackUrl, final String returnUrl, final String expiryPeriod, ArrayList<CustomerDetails> customerDetails) {
         displayProgreesLoading();
-        Call<ResponseTransaction> call=API.checkout(BaseKitDuitku.getUrlRequestTransaction(),new ResponseTransaction(DuitkuKit.getItemDetails(),paymentAmount,paymentMethod,productDetails,email,phoneNumber,additionalParam,merchantUserInfo,customerVaName,callbackUrl,returnUrl,expiryPeriod));
+        Call<ResponseTransaction> call=API.checkout(BaseKitDuitku.getUrlRequestTransaction(),new ResponseTransaction(DuitkuKit.getItemDetails(),paymentAmount,paymentMethod,productDetails,email,phoneNumber,additionalParam,merchantUserInfo,customerVaName,callbackUrl,returnUrl,expiryPeriod,customerDetails));
         call.enqueue(new Callback<ResponseTransaction>() {
             @Override
             public void onResponse(Call<ResponseTransaction> call, Response<ResponseTransaction> response) {

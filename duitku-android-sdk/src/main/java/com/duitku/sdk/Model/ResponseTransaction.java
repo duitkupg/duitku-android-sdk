@@ -53,7 +53,7 @@ public class ResponseTransaction {
 
     private ArrayList<ItemDetails> itemDetails ;
 
-    private ArrayList<CustomerDetails> customerDetails ;
+    private ArrayList<CustomerDetails> customerDetail ;
 
     public String getReference() {
         return reference;
@@ -92,7 +92,7 @@ public class ResponseTransaction {
         this.callbackUrl = callbackUrl;
         this.returnUrl= returnUrl;
         this.expiryPeriod= expiryPeriod;
-        this.customerDetails= customerDetails;
+        this.customerDetail= customerDetails;
 
     }
 

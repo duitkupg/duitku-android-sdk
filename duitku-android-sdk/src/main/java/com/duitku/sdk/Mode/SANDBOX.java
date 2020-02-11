@@ -64,11 +64,11 @@ public class SANDBOX {
                 if(url.contains(context.getString(R.string.sandbox)) ) {
 
                 }else if(url.contains(context.getString(R.string.expiredpage))){
-                    Log.e("returnUrl", "runSandbox: "+"ExpirePage" );
+
                 ((DuitkuTransaction)(context)).displayError(context.getString(R.string.retryExpiredpage));
 
                 }else if(url.contains("TopUpOVO")) {
-                    Log.e("returnUrl", "runSandbox: "+"TopUpOvo" );
+                
                 }else if(url.contains(duitkuKit.getReturnUrl()) || url.equals("") || url == ""   ) {
                     //wait(500);
                     ((DuitkuTransaction)(context)).closeProgreesLoading();

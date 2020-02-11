@@ -32,59 +32,59 @@ public class DuitkuKit {
     private static String  countryCode = "";
 
 
-    public static String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public static void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         DuitkuKit.firstName = firstName;
     }
 
-    public static String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public static void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         DuitkuKit.lastName = lastName;
     }
 
-    public static String getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public static void setAddress(String address) {
+    public void setAddress(String address) {
         DuitkuKit.address = address;
     }
 
-    public static String getCity() {
+    public String getCity() {
         return city;
     }
 
-    public static void setCity(String city) {
+    public void setCity(String city) {
         DuitkuKit.city = city;
     }
 
-    public static String getPostalCode() {
+    public String getPostalCode() {
         return postalCode;
     }
 
-    public static void setPostalCode(String postalCode) {
+    public void setPostalCode(String postalCode) {
         DuitkuKit.postalCode = postalCode;
     }
 
-    public static String getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public static void setPhone(String phone) {
+    public void setPhone(String phone) {
         DuitkuKit.phone = phone;
     }
 
-    public static String getCountryCode() {
+    public String getCountryCode() {
         return countryCode;
     }
 
-    public static void setCountryCode(String countryCode) {
+    public void setCountryCode(String countryCode) {
         DuitkuKit.countryCode = countryCode;
     }
 

@@ -94,7 +94,7 @@ public class ListPaymentMethodDuitku extends AppCompatActivity  {
 
         //payment amount null
 
-        if (DuitkuKit.getPaymentAmount() == 0 || DuitkuKit.getReturnUrl().equals("")|| DuitkuKit.getExpiryPeriod().equals("") || DuitkuKit.getEmail().equals("") || DuitkuKit.getPhoneNumber().equals("") || DuitkuKit.getProductDetails().equals("") ||  DuitkuKit.getReturnUrl() == null|| DuitkuKit.getExpiryPeriod() == null || DuitkuKit.getEmail() == null || DuitkuKit.getPhoneNumber() == null|| DuitkuKit.getProductDetails() == null || DuitkuKit.getAdditionalParam() == null || DuitkuKit.getMerchantUserInfo() == null|| DuitkuKit.getCustomerVaName() == null || DuitkuKit.getCallbackUrl() == null){
+        if (DuitkuKit.getPaymentAmount() == 0 || DuitkuKit.getExpiryPeriod().equals("") || DuitkuKit.getEmail().equals("") || DuitkuKit.getPhoneNumber().equals("") || DuitkuKit.getProductDetails().equals("") || DuitkuKit.getReturnUrl().equals("") || DuitkuKit.getCallbackUrl().equals("")||  DuitkuKit.getReturnUrl() == null|| DuitkuKit.getExpiryPeriod() == null || DuitkuKit.getEmail() == null || DuitkuKit.getPhoneNumber() == null|| DuitkuKit.getProductDetails() == null || DuitkuKit.getAdditionalParam() == null || DuitkuKit.getMerchantUserInfo() == null|| DuitkuKit.getCustomerVaName() == null || DuitkuKit.getCallbackUrl() == null){
             displayError(this.getString(R.string.errorNull));
         }else {
             txt_amount.setText("Rp"+conversiRupiah(""+DuitkuKit.getPaymentAmount() ));
@@ -210,22 +210,22 @@ public class ListPaymentMethodDuitku extends AppCompatActivity  {
                         Adapter.notifyDataSetChanged();
                     }else{
                         closeProgreesLoading();
-                        displayError("Error Response Data");
-                        Toast.makeText(mContext, "Error Response Data", Toast.LENGTH_SHORT).show();
+                        displayError(ListPaymentMethodDuitku.this.getString(R.string.errorResponse));
+                        Toast.makeText(mContext, ListPaymentMethodDuitku.this.getString(R.string.errorResponse), Toast.LENGTH_SHORT).show();
                     }
 
                 }else{
                     closeProgreesLoading();
-                    displayError("Error Response Data");
-                    Toast.makeText(mContext, "Error Response Data", Toast.LENGTH_SHORT).show();
+                    displayError(ListPaymentMethodDuitku.this.getString(R.string.errorResponse));
+                    Toast.makeText(mContext, ListPaymentMethodDuitku.this.getString(R.string.errorResponse), Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseGetListPaymentMethod> call, Throwable t) {
                 closeProgreesLoading();
-                displayError("Internal server error / check your connection");
-                Toast.makeText(mContext, "Internal server error / check your connection", Toast.LENGTH_SHORT).show();
+                displayError(ListPaymentMethodDuitku.this.getString(R.string.internalServerError));
+                Toast.makeText(mContext, ListPaymentMethodDuitku.this.getString(R.string.internalServerError), Toast.LENGTH_SHORT).show();
                 Log.e("Error", "onFailure: "+t.getMessage() );
             }
         });

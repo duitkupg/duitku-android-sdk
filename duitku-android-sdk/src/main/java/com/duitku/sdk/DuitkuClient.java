@@ -47,13 +47,13 @@ public class DuitkuClient extends AppCompatActivity {
     public void run() {
 
 
-        if (code.equals("00")) {
+        if (code.equals(DuitkuClient.this.getString(R.string.zero))) {
             onSuccessTransaction(status, reference, amount, code);
-        } else if (code.equals("01")) {
+        } else if (code.equals(DuitkuClient.this.getString(R.string.one))) {
             onPendingTransaction(status, reference, amount, code);
-        } else if (code.equals("02")) {
+        } else if (code.equals(DuitkuClient.this.getString(R.string.two))) {
             onCancelTransaction(status, reference, amount, code);
-        } else if (code.equals("03")) {
+        } else if (code.equals(DuitkuClient.this.getString(R.string.three))) {
             onCancelTransaction(status, reference, amount, code);
         }else {
 
@@ -65,13 +65,13 @@ public class DuitkuClient extends AppCompatActivity {
     public void duitkuFinish() {
 
 
-        if (code.equals("00")) {
+        if (code.equals(DuitkuClient.this.getString(R.string.zero))) {
             onDone();
-        } else if (code.equals("01")) {
+        } else if (code.equals(DuitkuClient.this.getString(R.string.one))) {
             onDone();
-        } else if (code.equals("02")) {
+        } else if (code.equals(DuitkuClient.this.getString(R.string.two))) {
             onDone();
-        } else if (code.equals("03")) {
+        } else if (code.equals(DuitkuClient.this.getString(R.string.three))) {
             onDone();
         } else {
 
@@ -82,7 +82,7 @@ public class DuitkuClient extends AppCompatActivity {
     public void FinishTopUpNotify() {
 
         //CC
-        if (topUpNotif.contains("TopUp") || topUpNotif == "Notification") {
+        if (topUpNotif.contains(DuitkuClient.this.getString(R.string.topUp)) || topUpNotif.equals(DuitkuClient.this.getString(R.string.Notification))) {
             onDone();
         }
 

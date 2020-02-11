@@ -64,15 +64,15 @@ public class PASSPORT {
 
 
                     }else if(url.contains(context.getString(R.string.expiredpage))){
-                        Log.e("returnUrl", "runPassport: "+"ExpirePage" );
+
                         ((DuitkuTransaction)(context)).displayError(context.getString(R.string.retryExpiredpage));
 
                     }else if(url.contains("TopUpOVO")) {
-                        Log.e("returnUrl", "runPassport: "+"TopUpOvo" );
+
                     }else if(url.contains(duitkuKit.getReturnUrl()) || url.equals("") || url == ""   ) {
                         //wait(500);
                         ((DuitkuTransaction)(context)).closeProgreesLoading();
-                        Log.e("returnUrl", "runPassport: "+duitkuKit.getReturnUrl() );
+
                         webView.stopLoading();
                         ((DuitkuTransaction)(context)).finish();
                     }

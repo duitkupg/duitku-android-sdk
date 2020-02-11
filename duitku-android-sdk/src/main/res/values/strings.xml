@@ -7,8 +7,19 @@
     <string name="dashboardCC">TopUpDuitkuCC</string>
     <string name="sandbox">sandbox</string>
     <string name="passport">passport</string>
+    <string name="sandboxLarge">SANDBOX</string>
+    <string name="passportLarge">PASSPORT</string>
     <string name="expiredpage">ExpiredPage</string>
     <string name="retryExpiredpage">Session Expired, Please, Retry Your Payment</string>
     <string name="errorNull">Internal Server Error, 502</string>
-
+    <string name="errorResponse">Error Response Data</string>
+    <string name="internalServerError">Internal server error / check your connection</string>
+    <string name="errorConnection">Please, Check your connection</string>
+    <string name="sukses">SUCCESS</string>
+    <string name="zero">00</string>
+    <string name="one">01</string>
+    <string name="two">02</string>
+    <string name="three">03</string>
+    <string name="topUp">TopUp</string>
+    <string name="Notification">Notification</string>
 </resources>

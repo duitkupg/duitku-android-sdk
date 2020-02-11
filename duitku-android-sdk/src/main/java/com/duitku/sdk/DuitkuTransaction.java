@@ -151,15 +151,15 @@ public class DuitkuTransaction extends AppCompatActivity {
                 if (response.isSuccessful()){
                     ResponseTransaction responseData = response.body();
 
-                    if(responseData.getStatusMessage().equals("SUCCESS")){
+                    if(responseData.getStatusMessage().equals(DuitkuTransaction.this.getString(R.string.errorConnection))){
                         closeProgreesLoading();
                         String d_url = response.body().getPaymentUrl();
                         reference = response.body().getReference();
 
-                        if(d_url.contains("sandbox")){
-                            DuitkuKit.setModePayment("SANDBOX");
+                        if(d_url.contains(DuitkuTransaction.this.getString(R.string.sandbox))){
+                            DuitkuKit.setModePayment(DuitkuTransaction.this.getString(R.string.sandboxLarge));
                         }else{
-                            DuitkuKit.setModePayment("PASSPORT");
+                            DuitkuKit.setModePayment(DuitkuTransaction.this.getString(R.string.passportLarge));
                         }
 
                         web_checkout(d_url);
@@ -171,8 +171,8 @@ public class DuitkuTransaction extends AppCompatActivity {
 
                 }else {
                     closeProgreesLoading();
-                    displayError("Please, check your internet connection");
-                    Toast.makeText(DuitkuTransaction.this, "Please, check your internet connection", Toast.LENGTH_SHORT).show();
+                    displayError(DuitkuTransaction.this.getString(R.string.errorConnection));
+                    Toast.makeText(DuitkuTransaction.this, DuitkuTransaction.this.getString(R.string.errorConnection), Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -180,9 +180,8 @@ public class DuitkuTransaction extends AppCompatActivity {
             @Override
             public void onFailure(Call<ResponseTransaction> call, Throwable t) {
                 closeProgreesLoading();
-                displayError("Internal server error or check your connection");
-                Log.e("CatchError", "onFailure: "+t.getMessage() );
-                Toast.makeText(DuitkuTransaction.this,"ServerNetwork error or check your connection", Toast.LENGTH_SHORT).show();
+                displayError(DuitkuTransaction.this.getString(R.string.internalServerError));
+                Toast.makeText(DuitkuTransaction.this,DuitkuTransaction.this.getString(R.string.internalServerError), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -291,8 +290,8 @@ public class DuitkuTransaction extends AppCompatActivity {
                 //Your code to do
                 closeProgreesLoading();
                 //cv_cc_info_transaction.setVisibility(View.VISIBLE);
-                displayError("Please, check your connection");
-                Toast.makeText(DuitkuTransaction.this, "Please, check your connection"+error.toString(), Toast.LENGTH_LONG).show();
+                displayError(DuitkuTransaction.this.getString(R.string.errorConnection));
+                Toast.makeText(DuitkuTransaction.this, DuitkuTransaction.this.getString(R.string.errorConnection)+error.toString(), Toast.LENGTH_LONG).show();
             }
 
 
@@ -312,7 +311,7 @@ public class DuitkuTransaction extends AppCompatActivity {
                 if (response.isSuccessful()){
                     ResponseCheckTransaction responseData = response.body();
 
-                    if(responseData.getStatusMessage().equals("SUCCESS")){
+                    if(responseData.getStatusMessage().equals(DuitkuTransaction.this.getString(R.string.sukses))){
                         displayProgreesLoading();
                         modeInformation(responseData.getStatusMessage(),responseData.getReference(),responseData.getAmount(),responseData.getStatusCode());
 
@@ -325,8 +324,8 @@ public class DuitkuTransaction extends AppCompatActivity {
                 }else {
                     closeProgreesLoading();
                     //cv_cc_info_transaction.setVisibility(View.VISIBLE);
-                    displayError("Please, check your internet connection");
-                    Toast.makeText(DuitkuTransaction.this, "error", Toast.LENGTH_SHORT).show();
+                    displayError(DuitkuTransaction.this.getString(R.string.errorConnection));
+                    Toast.makeText(DuitkuTransaction.this, DuitkuTransaction.this.getString(R.string.errorConnection), Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -335,10 +334,8 @@ public class DuitkuTransaction extends AppCompatActivity {
 
                 closeProgreesLoading();
                 //cv_cc_info_transaction.setVisibility(View.VISIBLE);
-                displayError("Please, check your internet connection");
-
-                Log.e("CatchError", "onFailure: "+t.getMessage());
-                Toast.makeText(DuitkuTransaction.this,"Server network error or check your connection", Toast.LENGTH_SHORT).show();
+                displayError(DuitkuTransaction.this.getString(R.string.internalServerError));
+                Toast.makeText(DuitkuTransaction.this,DuitkuTransaction.this.getString(R.string.errorConnection), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -352,11 +349,11 @@ public class DuitkuTransaction extends AppCompatActivity {
             SANDBOX sandbox =  new SANDBOX();
             PASSPORT passport =  new PASSPORT();
 
-            if (DuitkuKit.getModePayment() == "SANDBOX"){
+            if (DuitkuKit.getModePayment() == DuitkuTransaction.this.getString(R.string.sandboxLarge)){
                 sandbox.runSandbox(webView,this,DuitkuKit,url,reference);
             }
 
-            if (DuitkuKit.getModePayment() == "PASSPORT"){
+            if (DuitkuKit.getModePayment() == DuitkuTransaction.this.getString(R.string.passportLarge)){
                 passport.runPasport(webView,this,DuitkuKit,url,reference);
             }
 
@@ -421,8 +418,8 @@ public class DuitkuTransaction extends AppCompatActivity {
             //Your code to do
             closeProgreesLoading();
             //cv_cc_info_transaction.setVisibility(View.VISIBLE);
-            displayError("Please, check your connection");
-            Toast.makeText(DuitkuTransaction.this, "Please, check your connection", Toast.LENGTH_LONG).show();
+            displayError(DuitkuTransaction.this.getString(R.string.errorConnection));
+            Toast.makeText(DuitkuTransaction.this, DuitkuTransaction.this.getString(R.string.errorConnection), Toast.LENGTH_LONG).show();
         }
     }
 

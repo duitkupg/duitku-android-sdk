@@ -94,16 +94,7 @@ public class DuitkuTransaction extends AppCompatActivity {
 
 
         Address address = new Address(DuitkuKit.getFirstName(),DuitkuKit.getLastName(),DuitkuKit.getAddress(),DuitkuKit.getCity(),DuitkuKit.getPostalCode(),DuitkuKit.getPhoneNumber(),DuitkuKit.getCountryCode());
-        ArrayList<Address> shippingAddress = new  ArrayList<Address> ();
-        shippingAddress.add(address);
-
-        ArrayList<Address> billingAddress = new  ArrayList<Address> ();
-        billingAddress.add(address);
-
-        CustomerDetails customerDetails = new CustomerDetails(DuitkuKit.getFirstName(),DuitkuKit.getLastName(),DuitkuKit.getEmail(),DuitkuKit.getPhoneNumber(),billingAddress,shippingAddress) ;
-        ArrayList<CustomerDetails> customerDetails_ = new  ArrayList<CustomerDetails> ();
-        customerDetails_.add(customerDetails);
-
+        CustomerDetails customerDetails = new CustomerDetails(DuitkuKit.getFirstName(),DuitkuKit.getLastName(),DuitkuKit.getEmail(),DuitkuKit.getPhoneNumber(),address,address) ;
 
         checkout(DuitkuKit.getPaymentAmount(),
                 DuitkuKit.getPaymentMethod(),
@@ -115,7 +106,7 @@ public class DuitkuTransaction extends AppCompatActivity {
                 DuitkuKit.getCustomerVaName(),
                 DuitkuKit.getCallbackUrl(),
                 DuitkuKit.getReturnUrl(),
-                DuitkuKit.getExpiryPeriod(),customerDetails_);
+                DuitkuKit.getExpiryPeriod(),customerDetails);
     }
 
     private void initialiasi(){
@@ -151,7 +142,7 @@ public class DuitkuTransaction extends AppCompatActivity {
     }
 
 
-    private void checkout(final int paymentAmount, final String paymentMethod, final String productDetails, final String email, final String phoneNumber, final String additionalParam, final String merchantUserInfo, final String customerVaName, final String callbackUrl, final String returnUrl, final String expiryPeriod, ArrayList<CustomerDetails> customerDetails) {
+    private void checkout(final int paymentAmount, final String paymentMethod, final String productDetails, final String email, final String phoneNumber, final String additionalParam, final String merchantUserInfo, final String customerVaName, final String callbackUrl, final String returnUrl, final String expiryPeriod, CustomerDetails customerDetails) {
         displayProgreesLoading();
         Call<ResponseTransaction> call=API.checkout(BaseKitDuitku.getUrlRequestTransaction(),new ResponseTransaction(DuitkuKit.getItemDetails(),paymentAmount,paymentMethod,productDetails,email,phoneNumber,additionalParam,merchantUserInfo,customerVaName,callbackUrl,returnUrl,expiryPeriod,customerDetails));
         call.enqueue(new Callback<ResponseTransaction>() {

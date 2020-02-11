@@ -9,5 +9,6 @@
     <string name="passport">passport</string>
     <string name="expiredpage">ExpiredPage</string>
     <string name="retryExpiredpage">Session Expired, Please, Retry Your Payment</string>
+    <string name="errorNull">Internal Server Error, 502</string>
 
 </resources>

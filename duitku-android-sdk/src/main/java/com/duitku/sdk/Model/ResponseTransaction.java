@@ -53,7 +53,7 @@ public class ResponseTransaction {
 
     private ArrayList<ItemDetails> itemDetails ;
 
-    private ArrayList<CustomerDetails> customerDetail ;
+    private CustomerDetails customerDetail ;
 
     public String getReference() {
         return reference;
@@ -79,7 +79,7 @@ public class ResponseTransaction {
         this.statusMessage = statusMessage;
     }
 
-    public ResponseTransaction(ArrayList<ItemDetails> itemDetails, int paymentAmount, String paymentMethod , String productDetails , String email , String phoneNumber , String additionalParam , String merchantUserInfo , String customerVaName , String callbackUrl , String returnUrl , String expiryPeriod , ArrayList<CustomerDetails> customerDetails) {
+    public ResponseTransaction(ArrayList<ItemDetails> itemDetails, int paymentAmount, String paymentMethod , String productDetails , String email , String phoneNumber , String additionalParam , String merchantUserInfo , String customerVaName , String callbackUrl , String returnUrl , String expiryPeriod , CustomerDetails customerDetails) {
         this.itemDetails = itemDetails;
         this.paymentAmount = paymentAmount;
         this.paymentMethod = paymentMethod;

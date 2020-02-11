@@ -95,7 +95,7 @@ public class ListPaymentMethodDuitku extends AppCompatActivity  {
         //payment amount null
 
         if (DuitkuKit.getPaymentAmount() == 0 || DuitkuKit.getReturnUrl().equals("")|| DuitkuKit.getExpiryPeriod().equals("") || DuitkuKit.getEmail().equals("") || DuitkuKit.getPhoneNumber().equals("") || DuitkuKit.getProductDetails().equals("") ||  DuitkuKit.getReturnUrl() == null|| DuitkuKit.getExpiryPeriod() == null || DuitkuKit.getEmail() == null || DuitkuKit.getPhoneNumber() == null|| DuitkuKit.getProductDetails() == null || DuitkuKit.getAdditionalParam() == null || DuitkuKit.getMerchantUserInfo() == null|| DuitkuKit.getCustomerVaName() == null || DuitkuKit.getCallbackUrl() == null){
-            displayError("Internal response error, Check parameter");
+            displayError(this.getString(R.string.errorNull));
         }else {
             txt_amount.setText("Rp"+conversiRupiah(""+DuitkuKit.getPaymentAmount() ));
             initialisasi(DuitkuKit.getPaymentAmount());

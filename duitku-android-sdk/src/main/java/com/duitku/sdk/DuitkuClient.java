@@ -79,10 +79,10 @@ public class DuitkuClient extends AppCompatActivity {
 
     }
 
-    public void FinishTopUpNotify() {
+    public void FinishTopUpNotify(Context context) {
 
         //CC
-        if (topUpNotif.contains(DuitkuClient.this.getString(R.string.topUp)) || topUpNotif.equals(DuitkuClient.this.getString(R.string.Notification))) {
+        if (topUpNotif.contains(context.getString(R.string.topUp)) || topUpNotif.equals(context.getString(R.string.Notification))) {
             onDone();
         }
 

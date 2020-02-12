@@ -51,9 +51,17 @@ public class DuitkuAdapterPayment extends RecyclerView.Adapter<DuitkuAdapterPaym
         String code = responsePaymentMethod.getPaymentMethod();
         String url= responsePaymentMethod.getPaymentImage();
         String fee = responsePaymentMethod.getTotalFee();
+        int fee_ = Integer.parseInt(fee);
         holder.tvPayment.setText(payment);
         holder.tvDetail.setText("Bayar dengan "+payment);
-        holder.tvFee.setText("Fee "+"Rp "+conversiRupiah(""+fee ));
+
+
+        if (fee_ == 0){
+            holder.tvFee.setText("");
+        }else{
+            holder.tvFee.setText("Fee "+"Rp "+conversiRupiah(""+fee ));
+        }
+
         Glide.with(mContext).load(url).into(holder.ivTextDrawable);
 
         holder.btn_itemRow.setOnClickListener(new View.OnClickListener() {

@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
 
 group 'com.duitku'
-version '1.0.1-rc'
+version '1.0.1'
 
 android {
     compileSdkVersion 29
@@ -15,7 +15,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -54,7 +54,7 @@ ext {
         gitUrl =  'https://github.com/duitkupg/duitku-android-sdk.git'
         githubRepository= 'duitkupg/duitku-android-sdk'
 
-        libraryVersion = '1.0.1-rc'
+        libraryVersion = '1.0.1'
 
         developerId = 'duitku'
         developerName = 'Bambang Maulana'

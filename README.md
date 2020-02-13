@@ -1,4 +1,4 @@
-<h1>duitku-android-sdk 1.0</h1>
+<h1>duitku-android-sdk 1.0.0</h1>
 
 
 <b>Welcome to,</b> Duitku Android SDK registration page, Integrate this SDK to start transaction using duitku in your android application.
@@ -50,14 +50,14 @@ Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/b
 	<dependency>
 	  <groupId>com.duitku</groupId>
 	  <artifactId>duitku-android-sdk</artifactId>
-	  <version>1.0</version>
+	  <version>1.0.0</version>
 	  <type>pom</type>
 	</dependency>
 ```
 <h4>ivy</h4>
 
 ```html
-	<dependency org='com.duitku' name='duitku-android-sdk' rev='1.0'>
+	<dependency org='com.duitku' name='duitku-android-sdk' rev='1.0.0'>
 	  <artifact name='duitku-android-sdk' ext='pom' ></artifact>
 	</dependency>
 ```
@@ -67,7 +67,7 @@ For more information, visit https://bintray.com/duitku/duitku-android-sdk/duitku
 <h4>Build.gradle(Module:app)</h4>
 
 ```html
-	implementation 'com.duitku:duitku-android-sdk:1.0'
+	implementation 'com.duitku:duitku-android-sdk:1.0.0'
 ```
 
 <h3>Sample Project</h3>
@@ -82,5 +82,5 @@ Visit <a target="_Blank" href="https://github.com/duitkupg/sample-project" >Gith
 
 
 <h3>Full Step Docs </h3>
-Download  <a target="_blank" href="https://docs.duitku.com/">https://docs.duitku.com/</a>
+Download  <a target="_blank" href="https://docs.duitku.com/mobile/android/en/#introduction">Duitku Docs</a>
 

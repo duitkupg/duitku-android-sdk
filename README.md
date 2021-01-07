@@ -50,7 +50,7 @@ Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/b
 	<dependency>
 	  <groupId>com.duitku</groupId>
 	  <artifactId>duitku-android-sdk</artifactId>
-	  <version>1.0.1</version>
+	  <version>1.0.3</version>
 	  <type>pom</type>
 	</dependency>
 ```

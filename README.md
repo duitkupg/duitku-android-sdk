@@ -62,7 +62,7 @@ Download files sample  <a href="https://github.com/duitkupg/duitku-android-sdk/b
 	</dependency>
 ```
 
-For more information, visit https://bintray.com/duitku/duitku-android-sdk/duitku-android-sdk
+<!--For more information, visit https://bintray.com/duitku/duitku-android-sdk/duitku-android-sdk-->
 
 <h4>Build.gradle(Module:app)</h4>
 

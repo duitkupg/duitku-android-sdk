@@ -27,7 +27,7 @@
 
     $params_string = json_encode($params);
     
-    $url = 'http://sandbox.duitku.com/webapi/api/merchant/v2/inquiry'; // Sandbox
+    $url = 'https://sandbox.duitku.com/webapi/api/merchant/v2/inquiry'; // Sandbox
     //$url = 'https://passport.duitku.com/webapi/api/merchant/v2/inquiry'; // Production
     $ch = curl_init();
 

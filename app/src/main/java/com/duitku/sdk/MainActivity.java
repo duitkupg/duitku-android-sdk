@@ -119,14 +119,14 @@ public class MainActivity extends DuitkuClient {
         BaseKitDuitku.setUrlCheckTransaction(ENDPOINT_CHECK_TRX); //Endpoint checkTransaction
         BaseKitDuitku.setUrlListPayment(ENDPOINT_LIST_PAYMENT); //Endpoint List Payment
         duitku.setPaymentAmount(amount);
-        duitku.setEmail("bambangm88@gmail.com");//your merchant email
-        duitku.setPhoneNumber("082219278906"); //your merchant phone
+        duitku.setEmail("tes@gmail.com");//your merchant email
+        duitku.setPhoneNumber("0822192789"); //your merchant phone
         duitku.setAdditionalParam(""); //optional
         duitku.setMerchantUserInfo(""); //optional
         duitku.setCustomerVaName("");
         duitku.setProductDetails("Pembelian Sepatu");
-        duitku.setCallbackUrl("http://bambangm.com/callback");//required
-        duitku.setReturnUrl("http://bambangm.com/returnUrl");//required
+        duitku.setCallbackUrl("https://example.com/callback");//required
+        duitku.setReturnUrl("https://example.com/returnUrl");//required
         duitku.setExpiryPeriod("60");
 
         //set item details

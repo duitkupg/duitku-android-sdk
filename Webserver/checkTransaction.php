@@ -19,10 +19,10 @@
     class emp{}
     
     $params = array_merge((array)$result,$itemsParam);
-    $params_string = json_encode($params);
-    
+    $params_string = http_build_query($params); // x-www-form-urlencoded
+     
     //if sandbox
-    $url = 'http://sandbox.duitku.com/webapi/api/merchant/transactionStatus';
+    $url = 'https://sandbox.duitku.com/webapi/api/merchant/transactionStatus';
     //if production
     //$url = 'https://passport.duitku.com/webapi/api/merchant/transactionStatus';
     
@@ -33,7 +33,7 @@
     curl_setopt($ch, CURLOPT_POSTFIELDS, $params_string);                                                                  
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-        'Content-Type: application/json',                                                                                
+        'Content-Type: application/x-www-form-urlencoded',                                                                                
         'Content-Length: ' . strlen($params_string))                                                                       
     );   
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -46,7 +46,11 @@
     {
 	      echo $request;
     }
-    else
-        echo $httpCode;
-?>
+        else{
+            $response = new emp();
+			$response->statusMessage = "Server Error . $httpCode ";
+			$response->error = $httpCode;
+			die(json_encode($response)); 
 
+    }
+?>
